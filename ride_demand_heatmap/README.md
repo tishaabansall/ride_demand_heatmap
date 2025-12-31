@@ -66,12 +66,12 @@ streamlit run app_interactive.py
 
 
 ## Dataset
-ride_demand.csv is automatically generated if not present.
-The dataset is synthetic and created for demonstration purposes.
-Columns:
-time – hour of the day
-location – zone identifier
-ride_requests – number of ride requests
+- ride_demand.csv is automatically generated if not present.
+- The dataset is synthetic and created for demonstration purposes.
+- Columns:
+   - time – hour of the day
+   - location – zone identifier
+   - ride_requests – number of ride requests
 
 
 ## Future Improvements
@@ -85,5 +85,6 @@ ride_requests – number of ride requests
 - Metric design and interpretation
 - Python project structuring
 - Interactive dashboard development
+
 
 
