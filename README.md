@@ -1,13 +1,23 @@
 # Ride Demand Heatmap Analyzer
 
 ## Overview
-An interactive Python app that visualizes ride demand across different locations and hours using a heatmap. Users can filter by hour to see peak demand zones and spikes.
+An interactive Streamlit-based analytics dashboard that visualizes ride demand across urban zones and hours.
+The project helps identify peak demand hours, high-demand zones, and system-wide demand patterns to support data-driven driver allocation decisions.
 
-## Features
-- Interactive heatmap of ride demand
-- Filter by hour using sidebar
-- Shows peak hour across all zones
-- Displays raw data in a table
+This project demonstrates end-to-end data analysis: data loading, transformation, metric computation, and interactive visualization.
+
+## Key Features
+- **Hourly Demand Heatmap**  
+  Visualizes ride requests across zones and time using a color-coded heatmap.
+- **Time-Based Filtering**  
+  Filter demand patterns by hour to analyze temporal spikes.
+- **System-Level Insights**  
+  Displays the global peak demand hour and total ride volume.
+- **Zone Ranking**  
+  Ranks zones based on total ride demand.
+- **Raw Data Inspection**  
+  View filtered or full datasets directly within the app.
+
 
 ## Tech Stack
 - Python
@@ -15,6 +25,23 @@ An interactive Python app that visualizes ride demand across different locations
 - Pandas
 - Matplotlib / Seaborn
 - Streamlit (for interactive web app)
+
+## Project Structure
+
+```text
+ride_demand_heatmap/
+├── analysis/
+│   ├── __init__.py
+│   └── metrics.py
+├── data/
+│   └── ride_demand.csv
+├── screenshots/
+│   ├── heatmap_overview.png
+│   └── system_insights.png
+├── scripts/
+│   └── generate_data.py
+├── app.py
+```
 
 ## How to Run Locally
 
@@ -26,13 +53,24 @@ pip install pandas numpy matplotlib seaborn streamlit
 ```bash
 streamlit run app_interactive.py
 ```
+
+## Demo
+
+### Ride Demand Heatmap
+![Heatmap Overview](screenshots/heatmap_overview.png)
+
+### System Insights
+![System Insights](screenshots/system_insights.png)
+
+
 ## Dataset
-ride_demand.csv is automatically generated if not present.
-The dataset is synthetic and created for demonstration purposes.
-Columns:
-time – hour of the day
-location – zone identifier
-ride_requests – number of ride requests
+- ride_demand.csv is automatically generated if not present.
+- The dataset is synthetic and created for demonstration purposes.
+- Columns:
+   - time – hour of the day
+   - location – zone identifier
+   - ride_requests – number of ride requests
+
 
 ## Future Improvements
 - Add time slider for smoother hour selection
@@ -40,9 +78,11 @@ ride_requests – number of ride requests
 - Map-based visualization using latitude and longitude
 
 ## Skills Demonstrated
-- Data cleaning and transformation
+
+- Data analysis and aggregation
 - Exploratory data analysis (EDA)
-- Python application development
-- Interactive dashboard creation
+- Metric design and interpretation
+- Python project structuring
+- Interactive dashboard development
 
 
