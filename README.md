@@ -29,6 +29,8 @@ This project demonstrates end-to-end data analysis: data loading, transformation
 ## Project Structure
 
 ```text
+# Project Structure
+
 ride_demand_heatmap/
 ├── analysis/
 │   ├── __init__.py
@@ -64,12 +66,12 @@ streamlit run app_interactive.py
 
 
 ## Dataset
-- ride_demand.csv is automatically generated if not present.
-- The dataset is synthetic and created for demonstration purposes.
-- Columns:
-   - time – hour of the day
-   - location – zone identifier
-   - ride_requests – number of ride requests
+ride_demand.csv is automatically generated if not present.
+The dataset is synthetic and created for demonstration purposes.
+Columns:
+time – hour of the day
+location – zone identifier
+ride_requests – number of ride requests
 
 
 ## Future Improvements
@@ -78,7 +80,6 @@ streamlit run app_interactive.py
 - Map-based visualization using latitude and longitude
 
 ## Skills Demonstrated
-
 - Data analysis and aggregation
 - Exploratory data analysis (EDA)
 - Metric design and interpretation
